@@ -1,0 +1,40 @@
+@import "~@/styles/common.less";
+@import "~@/styles/var.less";
+.message{
+  .self-center();
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  white-space: nowrap;
+
+  transition: all 0.4s;
+  transform: translate(-50%, -50%) translateY(30px);
+  opacity: 0;
+
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 7px;
+}
+
+.message-error {
+  background-color: @danger;
+}
+
+.message-info {
+  background-color: @primary;
+}
+
+.message-success {
+  background-color: @success;
+}
+
+.message-warn {
+  background-color: @warn;
+}

@@ -1,0 +1,17 @@
+// * 在一个容器中居中
+.self-center(@pos:absolute) {
+  position: @pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// * 铺满整个容器
+.self-fill(@pos: absolute) {
+  position: @pos;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
